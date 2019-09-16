@@ -10,31 +10,31 @@
   </head>
 
   <body>
-    <header id="main-header">
+    <header class="main-header">
       <div class="content">
-        <nav id="nav-header">
-          <ul class="nav-header__list">
-            <li class="nav-header__item">
+        <nav id="c-nav-header">
+          <ul class="c-nav-header__list">
+            <li class="c-nav-header__item">
               <img
-                class="nav-header__icon"
+                class="c-nav-header__icon"
                 src="./images/home.svg"
                 alt="Home"
               />
               Home
             </li>
 
-            <li class="nav-header__item">
+            <li class="c-nav-header__item">
               <img
-                class="nav-header__icon"
+                class="c-nav-header__icon"
                 src="./images/notification.svg"
                 alt="Notifications"
               />
               Notifications
             </li>
 
-            <li class="nav-header__item">
+            <li class="c-nav-header__item">
               <img
-                class="nav-header__icon"
+                class="c-nav-header__icon"
                 src="./images/message.svg"
                 alt="Messages"
               />
@@ -45,18 +45,281 @@
 
         <img src="./images/logo.svg" alt="Logo Twitter" />
 
-        <div class="side">
+        <div class="c-side">
           <input
-            class="side__search"
+            class="c-side__search"
             type="text"
             placeholder="Search on Twitter"
           />
 
-          <img class="side__avatar" src="./images/avatar.png" alt="" />
+          <img class="c-side__avatar" src="./images/avatar.png" alt="Avatar" />
 
-          <button class="side__btn">Tweet</button>
+          <button class="c-side__btn">Tweet</button>
         </div>
       </div>
     </header>
+
+    <div class="c-banner">
+      <h1>Twitter @elmateuss</h1>
+    </div>
+
+    <nav class="c-userbar">
+      <div class="content">
+        <ul class="c-userbar__list">
+          <li class="c-userbar__item is-active">
+            <span class="c-userbar__title">Tweets</span>
+            <strong class="c-userbar__count">1350</strong>
+          </li>
+
+          <li class="c-userbar__item">
+            <span class="c-userbar__title">Following</span>
+            <strong class="c-userbar__count">1000</strong>
+          </li>
+
+          <li class="c-userbar__item">
+            <span class="c-userbar__title">Followers</span>
+            <strong class="c-userbar__count">84</strong>
+          </li>
+
+          <li class="c-userbar__item">
+            <span class="c-userbar__title">Favorites</span>
+            <strong class="c-userbar__count">98</strong>
+          </li>
+        </ul>
+
+        <div class="c-actions">
+          <button class="c-actions__btn-follow" type="button">Follow</button>
+          <img src="/images/more.svg" alt="See more" />
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrapper-content">
+      <aside class="c-profile">
+        <img
+          class="c-profile__avatar"
+          src="/images/avatar.png"
+          alt="Mateus Henrique"
+        />
+        <h1 class="c-profile__name">Mateus Henrique</h1>
+        <span class="c-profile__username">@elmateus</span>
+
+        <p class="c-profile__bio">
+          Front-end Developer #react #reactnative #nodejs
+        </p>
+
+        <ul class="c-profile__list">
+          <li class="c-profile__item">
+            <img class="c-profile__icon" src="/images/place.svg" alt="Place" />
+            Mogi Guaçu, São Paulo
+          </li>
+
+          <li class="c-profile__item">
+            <img class="c-profile__icon" src="/images/url.svg" alt="URL" />
+            create.be
+          </li>
+
+          <li class="c-profile__item">
+            <img
+              class="c-profile__icon"
+              src="/images/joined.svg"
+              alt="Joined"
+            />
+            Joined June 2007
+          </li>
+
+          <li class="c-profile__item">
+            <img class="c-profile__icon" src="/images/born.svg" alt="Born" />
+            Born the 20th of June 1988
+          </li>
+        </ul>
+
+        <div class="widget c-followers">
+          <strong class="widget__title">
+            <img
+              class="widget__icon"
+              src="/images/followers.svg"
+              alt="Followers"
+            />
+            73 followers that you know
+          </strong>
+
+          <ul class="widget__list">
+            <li class="widget__item"></li>
+            <li class="widget__item"></li>
+            <li class="widget__item"></li>
+            <li class="widget__item"></li>
+            <li class="widget__item"></li>
+            <li class="widget__item"></li>
+            <li class="widget__item"></li>
+            <li class="widget__item"></li>
+            <li class="widget__item"></li>
+            <li class="widget__item"></li>
+          </ul>
+        </div>
+
+        <div class="widget c-images">
+          <strong class="widget__title">
+            <img class="widget__icon" src="/images/images.svg" alt="Images" />
+            266 Photos and videos
+          </strong>
+
+          <ul class="widget__list">
+            <li class="widget__item"></li>
+            <li class="widget__item"></li>
+            <li class="widget__item"></li>
+            <li class="widget__item"></li>
+            <li class="widget__item"></li>
+            <li class="widget__item"></li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="c-timeline">
+        <nav class="c-timeline__nav">
+          <a class="c-timeline__link is-active" href="#">Tweets</a>
+          <a class="c-timeline__link" href="#">Tweets and replies</a>
+          <a class="c-timeline__link" href="#">Medias</a>
+        </nav>
+
+        <ul class="c-tweet">
+          <li class="c-tweet__item">
+            <img
+              class="c-tweet__avatar"
+              src="/images/avatar.png"
+              alt="Avatar"
+            />
+
+            <div class="c-tweet__info">
+              <strong class="c-tweet__user">
+                Benoit Vrins
+                <span class="c-tweet__link">@Exibit</span>
+              </strong>
+
+              <p class="c-tweet__content">
+                Lorem ipsum, or lipsum as it is sometimes known, is dummy text
+                used in laying out print, graphic or web designs.
+              </p>
+
+              <ul class="c-tweet__actions">
+                <li class="c-tweet__actions-item">
+                  <a href="#" class="c-tweet__actions-link">
+                    <img
+                      class="c-tweet__actions-icon"
+                      src="/images/comments.svg"
+                      alt="Comments"
+                    />
+                    3
+                  </a>
+                </li>
+
+                <li class="c-tweet__actions-item">
+                  <a href="#" class="c-tweet__actions-link">
+                    <img
+                      class="c-tweet__actions-icon"
+                      src="/images/retweet.svg"
+                      alt="Retweet"
+                    />
+                    23
+                  </a>
+                </li>
+
+                <li class="c-tweet__actions-item">
+                  <a href="#" class="c-tweet__actions-link">
+                    <img
+                      class="c-tweet__actions-icon"
+                      src="/images/like.svg"
+                      alt="Like"
+                    />
+                    100
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <aside class="widgets">
+        <div class="widget c-widget__follow">
+          <div class="c-widget__follow-title-box">
+            <strong class="c-widget__follow-title">Who to follow</strong>
+            <a class="c-widget__follow-link" href="#">Refresh</a>
+            <a class="c-widget__follow-link" href="#">View all</a>
+          </div>
+
+          <ul class="c-widget-profile">
+            <li class="c-widget-profile__item">
+              <div class="c-widget-profile__wrapper">
+                <img
+                  class="c-widget-profile__avatar"
+                  src="/images/avatar.png"
+                  alt="Avatar"
+                />
+
+                <div class="c-widget-profile__info">
+                  <strong class="c-widget-profile__user">
+                    Spade
+                    <span class="c-widget-profile__user-link"> @user</span>
+                  </strong>
+
+                  <button class="c-widget-profile__btn-follow" type="button">
+                    Follow
+                  </button>
+                </div>
+              </div>
+
+              <a href="#">x</a>
+            </li>
+
+            <li class="c-widget-profile__item">
+              <div class="c-widget-profile__wrapper">
+                <img
+                  class="c-widget-profile__avatar"
+                  src="/images/avatar.png"
+                  alt="Avatar"
+                />
+
+                <div class="c-widget-profile__info">
+                  <strong class="c-widget-profile__user">
+                    Spade
+                    <span class="c-widget-profile__user-link"> @user</span>
+                  </strong>
+
+                  <button class="c-widget-profile__btn-follow" type="button">
+                    Follow
+                  </button>
+                </div>
+              </div>
+
+              <a href="#">x</a>
+            </li>
+
+            <li class="c-widget-profile__item">
+              <div class="c-widget-profile__wrapper">
+                <img
+                  class="c-widget-profile__avatar"
+                  src="/images/avatar.png"
+                  alt="Avatar"
+                />
+
+                <div class="c-widget-profile__info">
+                  <strong class="c-widget-profile__user">
+                    Spade
+                    <span class="c-widget-profile__user-link"> @user</span>
+                  </strong>
+
+                  <button class="c-widget-profile__btn-follow" type="button">
+                    Follow
+                  </button>
+                </div>
+              </div>
+
+              <a href="#">x</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
   </body>
 </html>
